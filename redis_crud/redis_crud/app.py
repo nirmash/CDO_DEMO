@@ -1,8 +1,6 @@
 import json
 import redis_proxy as r
 import os
-# import requests
-
 
 def lambda_handler(event, context):
 
