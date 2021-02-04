@@ -32,8 +32,8 @@ Resources:
         - AWSLambda_FullAccess
       Environment:
         Variables:
-          API_URI: https://pu65bkndtvahlfy5nvhs5vzuhq.appsync-api.us-west-2.amazonaws.com/graphql
-          API_KEY: da2-scoukebkyzcbrd5mwc7zswe7bm        
+          API_URI: <url for graphql endpoint>
+          API_KEY: <key for graphql endpoint>        
       Events:
         ApiEvent:
           Type: HttpApi
