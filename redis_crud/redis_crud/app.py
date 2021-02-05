@@ -16,7 +16,7 @@ def lambda_handler(event, context):
         r.Set(redis_key,redis_value)
         r.Incr("key_count")
         r.Incr("crud_count_{0}".format(redis_key))
-
+        print("Redis update count-{0} CRUD count for {1}-{2}".format(r.Get("key_count"),redis_key, r.Get("crud_count_{0}".format(redis_key))))
         return {
             "statusCode": 200,
             "body": json.dumps({
