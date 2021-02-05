@@ -13,8 +13,8 @@ COPY go_redis_ipc_extension_layer/bin/extensions/go-redis-ipc-extension-layer go
 RUN chmod u+x go-redis-ipc-extension-layer
 
 # Setup the links to the Redis backend
-ENV API_URI="https://pu65bkndtvahlfy5nvhs5vzuhq.appsync-api.us-west-2.amazonaws.com/graphql"
-ENV API_KEY="da2-scoukebkyzcbrd5mwc7zswe7bm"
+ENV API_URI=<url for graphql endpoint>
+ENV API_KEY=<key for graphql endpoint>
 
 # Setup the Python Redis client layer
 RUN mkdir /opt/python
