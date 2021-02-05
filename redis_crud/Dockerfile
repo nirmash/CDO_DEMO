@@ -15,6 +15,10 @@ RUN chmod u+x go-redis-ipc-extension-layer
 # Setup the links to the Redis backend
 ENV API_URI=<url for graphql endpoint>
 ENV API_KEY=<key for graphql endpoint>
+ENV SQS_QUEUE_NAME=<name for SQS queue>
+ENV AWS_ACCESS_KEY_ID=<aws access key>
+ENV AWS_SECRET_ACCESS_KEY=<aws secret access key>
+ENV AWS_REGION=<aws region>
 
 # Setup the Python Redis client layer
 RUN mkdir /opt/python
